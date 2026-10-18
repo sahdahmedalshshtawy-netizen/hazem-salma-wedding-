@@ -1,0 +1,339 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hazem & Salma | Wedding Invitation</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Playfair+Display:wght@500;700&display=swap');
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  background: #100b0e;
+  color: #fff2df;
+  font-family: 'Cairo', sans-serif;
+  text-align: center;
+}
+
+.cover {
+  min-height: 100vh;
+  padding: 35px 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(ellipse at top, #642338, #100b0e 70%);
+}
+
+.small-title {
+  color: #d9b878;
+  letter-spacing: 3px;
+  font-size: 12px;
+}
+
+h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(44px, 12vw, 76px);
+  font-weight: 500;
+  color: #d9b878;
+  margin: 8px;
+  line-height: 1.2;
+}
+
+.amp {
+  font-family: 'Playfair Display', serif;
+  font-size: 36px;
+  margin: 4px;
+}
+
+.line {
+  width: 85px;
+  height: 1px;
+  background: #d9b878;
+  margin: 22px auto;
+}
+
+p {
+  line-height: 2;
+}
+
+.button {
+  display: inline-block;
+  padding: 12px 23px;
+  margin: 8px;
+  border: 1px solid #d9b878;
+  border-radius: 30px;
+  background: #d9b878;
+  color: #180d10;
+  text-decoration: none;
+  font-family: 'Cairo', sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.button:hover {
+  background: transparent;
+  color: #d9b878;
+}
+
+section {
+  padding: 55px 18px;
+}
+
+.heading {
+  font-family: 'Playfair Display', serif;
+  color: #d9b878;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.subheading {
+  color: #d6c6bc;
+  font-size: 14px;
+}
+
+.card {
+  max-width: 520px;
+  margin: 24px auto;
+  padding: 25px 18px;
+  border: 1px solid #78532f;
+  border-radius: 17px;
+  background: linear-gradient(145deg, #29151b, #170d11);
+}
+
+.couple-photo {
+  display: block;
+  width: 100%;
+  max-width: 350px;
+  height: 350px;
+  object-fit: cover;
+  margin: 24px auto;
+  border: 1px solid #d9b878;
+  border-radius: 14px;
+}
+
+.date {
+  color: #d9b878;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.details {
+  line-height: 2.2;
+}
+
+input, textarea {
+  display: block;
+  width: 100%;
+  margin: 12px 0;
+  padding: 13px;
+  background: #100b0e;
+  border: 1px solid #78532f;
+  border-radius: 9px;
+  color: white;
+  font-family: 'Cairo', sans-serif;
+  font-size: 14px;
+}
+
+textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.note {
+  color: #c8b8ad;
+  font-size: 12px;
+}
+
+footer {
+  padding: 28px 15px;
+  color: #d9b878;
+  background: #080607;
+  line-height: 2;
+}
+
+@media (max-width: 480px) {
+  section { padding: 42px 15px; }
+  .couple-photo { height: 300px; }
+}
+</style>
+</head>
+
+<body>
+
+<header class="cover">
+  <p class="small-title">YOU ARE INVITED</p>
+
+  <h1>Hazem</h1>
+  <div class="amp">&</div>
+  <h1>Salma</h1>
+
+  <div class="line"></div>
+
+  <p>
+    حكاية حب، وبداية عمر جديد ❤️<br>
+    مستنيينكم تشاركونا أجمل ليلة في حياتنا.
+  </p>
+
+  <a href="#details" class="button">OPEN INVITATION ✨</a>
+</header>
+
+<section id="details">
+  <div class="heading">Our Wedding Day</div>
+
+  <p class="subheading">
+    بكل الحب والسعادة، يشرفنا وجودكم معانا في يوم فرحتنا.
+  </p>
+
+  <img
+    class="couple-photo"
+    src="couple.jpg"
+    alt="Hazem and Salma"
+    onerror="this.style.display='none'"
+  >
+
+  <p class="note">
+    لإظهار صورتكم، أضيفي صورة العروسين باسم couple.jpg.
+  </p>
+
+  <div class="card">
+    <div class="heading">The Date</div>
+    <div class="date">Friday, March 26, 2027</div>
+    <p class="details">
+      الجمعة 26 مارس 2027<br>
+      من الساعة 8:00 مساءً<br>
+      حتى الساعة 12:00 منتصف الليل
+    </p>
+  </div>
+
+  <div class="card">
+    <div class="heading">The Venue</div>
+    <p class="details">
+      La Rose Wedding Hall<br>
+      Alexandria, Egypt
+    </p>
+
+    <a
+      class="button"
+      href="https://maps.app.goo.gl/6xgJG4sAPrtBPp896?g_st=aw"
+      target="_blank"
+      rel="noopener"
+    >
+      📍 مكان الفرح
+    </a>
+  </div>
+</section>
+
+<section>
+  <div class="heading">Our Special Song 🎶</div>
+
+  <p class="subheading">
+    أغنيتنا المميزة ❤️
+  </p>
+
+  <audio id="song" src="song.mp3" preload="none"></audio>
+
+  <button class="button" id="musicButton" onclick="toggleMusic()">
+    ▶ تشغيل الأغنية
+  </button>
+
+  <p class="note">
+    أضيفي ملف الأغنية باسم song.mp3 بجوار ملف الدعوة.
+  </p>
+</section>
+
+<section>
+  <div class="heading">Your Wishes 💌</div>
+
+  <p class="subheading">
+    سيبوا لنا كلمة حلوة في يوم فرحتنا.
+  </p>
+
+  <div class="card">
+    <form id="wishForm">
+      <input
+        id="guestName"
+        type="text"
+        placeholder="اسمك"
+        required
+      >
+
+      <textarea
+        id="guestWish"
+        placeholder="اكتب تهنئتك للعروسين ❤️"
+        required
+      ></textarea>
+
+      <button class="button" type="submit">
+        عرض التهنئة
+      </button>
+    </form>
+
+    <div id="preview" style="display:none">
+      <div class="line"></div>
+      <h3 style="color:#d9b878">تهنئة جميلة ❤️</h3>
+      <p id="previewName"></p>
+      <p id="previewWish"></p>
+    </div>
+
+    <p class="note" id="message">
+      التهنئة ستظهر للمعاينة فقط، ولن تُحفظ أو تُرسل حتى نربط خدمة استقبال الردود.
+    </p>
+  </div>
+</section>
+
+<footer>
+  Hazem & Salma<br>
+  Forever Starts Here ❤️<br>
+  26 • 03 • 2027
+</footer>
+
+<script>
+const song = document.getElementById('song');
+const musicButton = document.getElementById('musicButton');
+
+function toggleMusic() {
+  if (song.paused) {
+    song.play().then(() => {
+      musicButton.textContent = '❚❚ إيقاف الأغنية';
+    }).catch(() => {
+      alert('أضيفي ملف الأغنية باسم song.mp3 أولًا.');
+    });
+  } else {
+    song.pause();
+    musicButton.textContent = '▶ تشغيل الأغنية';
+  }
+}
+
+song.addEventListener('ended', () => {
+  musicButton.textContent = '▶ تشغيل الأغنية';
+});
+
+document.getElementById('wishForm').addEventListener('submit', function(e) {
+  e.preventDefault();
+
+  const name = document.getElementById('guestName').value.trim();
+  const wish = document.getElementById('guestWish').value.trim();
+
+  if (!name || !wish) return;
+
+  document.getElementById('previewName').textContent = name;
+  document.getElementById('previewWish').textContent = wish;
+  document.getElementById('preview').style.display = 'block';
+
+  document.getElementById('message').textContent =
+    'التهنئة للمعاينة فقط، ولسه محتاجين نربط خدمة لحفظ الرسائل.';
+
+  this.reset();
+});
+</script>
+
+</body>
+</html>
